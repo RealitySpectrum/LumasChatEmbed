@@ -51,9 +51,9 @@ export const Badge = (props: Props) => {
           {props.footer?.text ?? 'Powered by'}
           <a
             ref={liteBadge}
-            href={props.footer?.companyLink ?? 'https://flowiseai.com'}
+            href={props.footer?.companyLink ?? 'https://SmartFAQs.ai'}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener referrer"
             class="lite-badge"
             id="lite-badge"
             style={{ 'font-weight': 'bold', color: props.footer?.textColor ?? props.poweredByTextColor ?? defaultTextColor }}
