@@ -17,7 +17,7 @@ export type UploadsConfig = {
     fileUploadSizeAndTypes: IUploadConstraits[];
     isImageUploadAllowed: boolean;
     isSpeechToTextEnabled: boolean;
-    isFileUploadAllowed: boolean;
+    isRAGFileUploadAllowed: boolean;
 };
 type FilePreviewData = string | ArrayBuffer;
 type FilePreview = {
@@ -87,6 +87,8 @@ export type BotProps = {
     showAgentMessages?: boolean;
     title?: string;
     titleAvatarSrc?: string;
+    titleTextColor?: string;
+    titleBackgroundColor?: string;
     fontSize?: number;
     isFullPage?: boolean;
     footer?: FooterTheme;
@@ -99,6 +101,8 @@ export type BotProps = {
     clearChatOnReload?: boolean;
     disclaimer?: DisclaimerPopUpTheme;
     dateTimeToggle?: DateTimeToggleTheme;
+    renderHTML?: boolean;
+    closeBot?: () => void;
 };
 export type LeadsConfig = {
     status: boolean;
